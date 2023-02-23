@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Release to S3
-    run: bash scripts/pipeline/release.sh ${{secrets.AWS_Bucket_Name}} "folder1/myapp.zip" ${{screts.AWS_Access_Key}}
+    run: bash scripts/pipeline/release.sh "ms-login" "folder1/myapp.zip" ${{screts.AWS_Access_Key}}
